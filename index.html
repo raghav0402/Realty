@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="Scripts/angular.min.js"></script>
+	<script src="Scripts/angular-route.min.js"></script>
+	<script src="Scripts/script.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+    
+
+	
+<body ng-app="RoutingApp">
+<div>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Freerealty.com</h4>
+      <ul class="nav nav-pills nav-stacked" bs-active-link>
+        <li class = "active"><a href="#/home">Home</a></li>
+        <li><a href="#/about">About the company</a></li>
+        <li><a href="#/post">Post Site</a></li>
+        <li><a href="#/contact">Contact Us</a></li>
+      </ul><br>
+    </div>
+
+    <div class="col-sm-9">
+	   <hr>
+      <h2>Welcome to Freerealty.com</h2>
+	  <h4><small>This is a sample realty site</small></h4>
+	     <hr>
+   
+      <br><br>
+	  <div ng-view></div>
+    
+ 
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
